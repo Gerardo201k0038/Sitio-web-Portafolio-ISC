@@ -27,6 +27,30 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 background-color: #002071;
   }
+  /*Estilos logo */
+  .logo{
+    background-color: azure;
+
+    width: 35%;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    border-style:inset;
+    border-radius: 0.3rem;
+    border-width: 5px ;
+    margin-left: 2em;
+  }
+  .img-logo{
+    width: 400px;
+     
+  }
+  .img-logo2{
+    width: 100px;
+      
+  }
+ 
+  /*Fin de estilos logo*/
+
+    /*Estilos home */
   .home{
     background-color:#0d46a0;
     width: 100%;
@@ -50,6 +74,7 @@ background-color: #002071;
     width: 35%;
     padding: 0.6rem;
   }
+  /*Fin de estilos home*/
 
   .btn{
     display: inline-block;
@@ -61,18 +86,13 @@ background-color: #002071;
 
   }
 
-.img-logo{
-  width: 35%;
-    padding: 0.6rem;
-}
-.img-logo2{
-  width: 100px;
-    padding: 0.6rem;
-}
+
 
  footer{
   background-color: #66bb6a ;
   width: 100%;
   height: 50px;
+  color: azure;
+  margin-top: 5em;
 
  }
