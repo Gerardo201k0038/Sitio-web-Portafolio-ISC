@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,42 +10,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic:wght@700&family=Open+Sans:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<script src="js/script.js"></script>
+
+<!--bootstrap-->
+<script src="/bootstratp/js/bootstrap.min.js"></script>
+<script src="/bootstratp/js/bootstrap.min.js"></script>
+<script src="/bootstratp/js/jquery-3.6.1.min.js"></script>
 </head>
 
 
 <body>
 
     <header>
-        <div class="logo">
-        <img class="img-logo"   src="/img/logo.png" alt="">
-        <img class="img-logo2"   src="/img/logo2.png" alt="">
+        <div class="cont-logo">
+            <div class="logo">
+                <img src="/assets/img/logo-sep.jpg" alt="">
+                <img src="/assets/img/logo-tecnm.jpg" alt="">
+                <img src="/assets/img/logo-tec.jpg" alt="">
+            </div>
         </div>
         <section class="home">
-            <br>
-        <div class="title-home">
-            <h1> Portafolio ISC</h1>
-        </div>
+          
+            <div class="title-s">
+                <h1> Portafolio ISC</h1>
+            </div>
 
-        <div>
-            <h3>En esta pagina se presentaran los resultados de las practicas que se realizaron en clases, utilizando distintas tecnologias y herramienta para su desarrollo</h3>
-            <img class="img-home"   src="/img/html-css.png" alt="">
-        
-        </div>
-        <div>
-            
-            <a href="" class="btn">Primer tema</a>
-            <a href="" class="btn">Segundo tema</a>
-            <a href="" class="btn">Tercer tema</a>
-            <a href="" class="btn">Cuarto tema</a>
-            <a href="" class="btn">Quinto tema</a>
-        </div>
+            <div>
+                <h3>En esta pagina se presentaran los resultados de las practicas que se realizaron en clases, utilizando distintas tecnologias y herramienta para su desarrollo</h3>
+                <div class="tecno">
+                    <img src="/assets/img/logo-html.jpg" alt="">
+                    <img src="/assets/img/logo-css.jpg" alt="">
+                    <img src="/assets/img/logo-js.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="btn-menu">
+                <a href="#tema1" class="btn">Primer tema</a>
+                <a href="#tema2" class="btn">Segundo tema</a>
+                <a href="" class="btn">Tercer tema</a>
+                <a href="" class="btn">Cuarto tema</a>
+                <a href="" class="btn">Quinto tema</a>
+            </div>
 
 
         </section>
     </header>
 
-    
+    <article class="card" >
+      
+        <div class="body-card" id="tema1">
+            <div class="title-s">
+            <h2>Tema 1</h2>
+        </div>
+  <p>Se creo un documento en donde se probaron distintas etiquetas del HTML así como sus estructuras</p>
+  <img class="img-card"   src="/assets/img/tema1.png" alt="">
+  
 
+        </div>
+        <div class="btn-menu">
+        <a href="https://github.com/Gerardo201k0038/ejercicios_realizados./tree/08750bf2b19e0c40e0cffca0ddadad1897b3a7c3" class="btn">Repositorio</a>
+        </div>
+    </article>
+    <article class="card" >
+      
+        <div class="body-card" id="tema2">
+            <div class="title-s">
+            <h2>Tema 2</h2>
+        </div>
+  <p>En esta práctica se utilizó el flexbox para generar un layout con la información proporcionada</p>
+  <img class="img-card"   src="/assets/img/tema2.jpg" alt="">
+  
+
+        </div>
+        <div class="btn-menu">
+        <a href="https://github.com/Gerardo201k0038/ejercicios_realizados./tree/08750bf2b19e0c40e0cffca0ddadad1897b3a7c3" class="btn">Repositorio</a>
+        </div>
+    </article>
+
+    <article class="card" >
+      
+        <div class="body-card" id="tema2">
+            <div class="title-s">
+            <h2>Contacto</h2>
+            
+        </div>
+<p>Alumno:Gerardo Alfonso Santana Buenfil</p>
+<p>Grado:5°Semestre</p>
+<p>Grupo:B</p>
+<p>Correo electronico:201k0038@itscarrillopuerto.edu.mx</p>
+    </article>
+    
 </body>
 <footer>
      <p>Gerardo Alfonso Santana Buenfil</p>
