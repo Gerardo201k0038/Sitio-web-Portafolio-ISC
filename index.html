@@ -12,16 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic:wght@700&family=Open+Sans:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
 <script src="js/script.js"></script>
-
-<!--bootstrap-->
-<script src="/bootstratp/js/bootstrap.min.js"></script>
-<script src="/bootstratp/js/bootstrap.min.js"></script>
-<script src="/bootstratp/js/jquery-3.6.1.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 
 <body>
-
+    
     <header>
         <div class="cont-logo">
             <div class="logo">
@@ -48,9 +44,11 @@
             <div class="btn-menu">
                 <a href="#tema1" class="btn">Primer tema</a>
                 <a href="#tema2" class="btn">Segundo tema</a>
-                <a href="" class="btn">Tercer tema</a>
-                <a href="" class="btn">Cuarto tema</a>
-                <a href="" class="btn">Quinto tema</a>
+                <a href="#" class="btn">Tercer tema</a>
+                <a href="#" class="btn">Cuarto tema</a>
+                <a href="#" class="btn">Quinto tema</a>
+                <a href="#" class="btn">Formulario</a>
+                <a href="#" class="btn">Contacto</a>
             </div>
 
 
@@ -69,8 +67,28 @@
 
         </div>
         <div class="btn-menu">
-        <a href="https://github.com/Gerardo201k0038/ejercicios_realizados./tree/08750bf2b19e0c40e0cffca0ddadad1897b3a7c3" class="btn">Repositorio</a>
-        </div>
+        <a onclick="re2()" class="btn">Repositorio</a>
+        <script>
+            function re2(){
+                swal({
+  title: "¿Estas seguro?",
+  text: "Al aceptar te redireccionara a otra pagina",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Se te redireccionara al repositorio", {
+      icon: "success",
+    });
+  } else {
+    swal("Puedes seguir navegando por la pagina");
+  }
+});
+            }
+        </script>
+    </div>
     </article>
     <article class="card" >
       
@@ -84,23 +102,85 @@
 
         </div>
         <div class="btn-menu">
-        <a href="https://github.com/Gerardo201k0038/ejercicios_realizados./tree/08750bf2b19e0c40e0cffca0ddadad1897b3a7c3" class="btn">Repositorio</a>
+        <a onclick="re1()"  class="btn">Repositorio</a>
+        <script>
+            function re1(){
+                swal({
+  title: "¿Estas seguro?",
+  text: "Al aceptar te redireccionara a otra pagina",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Se te redireccionara al repositorio", {
+      icon: "success",
+    });
+  } else {
+    swal("Puedes seguir navegando por la pagina");
+  }
+});
+            }
+        </script>
         </div>
     </article>
 
     <article class="card" >
-      
+
+
+        <div class="body-card" id="tema2">
+            <div class="title-s">
+            <h2>Formulario</h2>
+            </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <a href="#" class="btn" onclick="form()">Enviar</a>
+        <script>
+            function form() {
+                swal ({
+                    title: "El comentario se ha enviado",
+                    text: "Gracias por comentar",
+                    icon: "success",
+                    button: "Entrar",
+                  });
+            }
+        </script>
+      </div>
+
+    </article>
+
+    <article class="card" >
+       
+
         <div class="body-card" id="tema2">
             <div class="title-s">
             <h2>Contacto</h2>
             
+
+
+            
         </div>
-<p>Alumno:Gerardo Alfonso Santana Buenfil</p>
-<p>Grado:5°Semestre</p>
-<p>Grupo:B</p>
-<p>Correo electronico:201k0038@itscarrillopuerto.edu.mx</p>
+
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Datos</li>
+            <li class="list-group-item">Alumno:Gerardo Alfonso Santana Buenfil</li>
+            <li class="list-group-item">Grado:5°Semestre</li>
+           
+            <li class="list-group-item">Grupo:B</li>
+            <li class="list-group-item">Correo electronico:201k0038@itscarrillopuerto.edu.mx</li>
+          </ul>
+
     </article>
     
+
 </body>
 <footer>
      <p>Gerardo Alfonso Santana Buenfil</p>
